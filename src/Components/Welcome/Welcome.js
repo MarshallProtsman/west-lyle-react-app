@@ -1,6 +1,6 @@
 import { render } from "@testing-library/react";
 import React from "react";
-import Swing from "../Swing/Swing";
+import SwingLogo from "../SwingLogo/SwingLogo";
 import Typography from "@material-ui/core/Typography";
 
 function Welcome(props) {
@@ -22,7 +22,7 @@ function Welcome(props) {
         </Typography>
         <Typography variant="h5">{props.subtitle}</Typography>
       </div>
-      <Swing />
+      <SwingLogo />
     </div>
   );
 }
