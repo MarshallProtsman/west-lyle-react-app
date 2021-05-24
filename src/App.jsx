@@ -1,27 +1,17 @@
 import "./App.css";
 import Welcome from "./Components/Welcome/Welcome";
-import background from "./assets/images/cover_photo_2.jpg";
-import Background from "./Components/styled-components";
+import { Background, Wrapper } from "./Components/styled-components";
 
-const BgImage = "https://source.unsplash.com/random"
-
+const BgImage = "/assets/images/cover_photo_2.jpg";
 
 function App() {
   return (
-    <Background BgImage={BgImage}>
-      <div className="App">
+    <Background BgImage={BgImage} Repeat="no-repeat" width="5000px">
+      <Wrapper>
         <header>
           <Welcome name="West Lyle Swing Co." subtitle="How do you swing?" />
         </header>
-        {/* <div
-          style={{
-            display: "flex",
-            backgroundImage: `url(${background})`,
-            backgroundRepeat: "no-repeat",
-            height: "900px",
-          }}
-        ></div> */}
-      </div>
+      </Wrapper>
     </Background>
   );
 }
