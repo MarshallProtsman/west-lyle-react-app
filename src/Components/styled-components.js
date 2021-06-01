@@ -9,4 +9,10 @@ export const Background = styled.div`
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
+  background-color: ${(props) =>  props.bgColor};
 `;
+
+export const Subtitle = styled.h2`
+text-align: center;
+color: rgb(24, 47, 69);
+`

@@ -11,12 +11,13 @@ function SwingLogo() {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 652.63 544.01"
-        onMouseLeave={() => set({ x: 0, color: "red" })}
-        onMouseEnter={() => set({ x: 5, color: "#000" })}
-        onClick={()=> set({ x: 10, color: "red" })}
+        onMouseEnter={() => set({ x: 5})}
+        onMouseLeave={() => set({ x: 0})}
+        onClick={()=> set({ x: 10})}
+        onTouchTap={()=> set({ x: 10})}
       >
         <animated.path
-          fill="#fff"
+          fill="none"
           stroke="#000"
           strokeMiterlimit="10"
           strokeWidth="30"
